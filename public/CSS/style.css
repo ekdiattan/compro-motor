@@ -1,0 +1,9 @@
+
+/* CARD */
+@media (max-width: 768px) {
+    .col-sm-4 {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+}
+/* END CARD */
