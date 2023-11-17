@@ -9,16 +9,21 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Home extends Model
 {
     use HasFactory, SoftDeletes;
+    
+    protected $table = 'Home';
 
-    protected $table = 'home';
+    protected $primaryKey = 'HomeId';
 
-    protected $primaryKey = 'id';
-
-    protected $guarded = [
-        'id',
+    protected $fillable = [
+        'Name',
+        'Slogan',
+        'KataPengantar',
+        'NamaOrang',
+        'Jabatan',
+        'Image',
     ];
     
-    const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'updated_at';
-    const DELETED_AT = 'deleted_at';
+    const CREATED_AT = 'HomeCreatedAt';
+    const UPDATED_AT = 'HomeUpdatedAt';
+    const DELETED_AT = 'HomeDeletedAt';
 }

@@ -1,23 +1,16 @@
 <?php
 
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ManagementController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
-Route::get('/', function () {
-    return("halooo");
-});
+Route::get('/', [ManagementController::class, 'index']);
+Route::get('/contact', [ManagementController::class, 'contact']);
+Route::get('/aboutus', [ManagementController::class, 'aboutus']);
+Route::get('/visimisi', [ManagementController::class, 'visimisi']);
+Route::get('/service', [ManagementController::class, 'service']);
+Route::get('/client', [ManagementController::class, 'client']);
 
-Route::get('/login', [UserController::class, 'viewLogin']);
+Route::post('/store', [ContactController::class, 'storeEmail']);
 
-Route::get('/dashboard', [UserController::class, 'dashboard']);
