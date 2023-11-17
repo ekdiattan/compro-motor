@@ -22,7 +22,7 @@
             </div>
             <div class="col-lg-5">
                 <div class="img-wrap">
-                    <img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid">
+                    {{-- <img src="images/why-choose-us-img.jpg" alt="Image" class="img-fluid"> --}}
                 </div>
             </div>
 

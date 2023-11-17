@@ -17,6 +17,7 @@
                 </li>
                 <li><a class="nav-link" href="/aboutus">About us</a></li>
                 <li><a class="nav-link" href="/visimisi">Visi Misi</a></li>
+                <li><a class="nav-link" href="/galeri">Galeri</a></li>
                 <li><a class="nav-link" href="/service">Service</a></li>
                 <li><a class="nav-link" href="/contact">Kontak</a></li>
                 <li><a class="nav-link" href="/client">Klien</a></li>

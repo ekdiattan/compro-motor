@@ -42,9 +42,9 @@ class ServiceController extends Controller
 
         try{
             DB::beginTransaction();
-            $service = Service::findOrFail($id);
+            
+            $service = Service::find($id);
             $service->delete(); 
-            return $this->successResponse($service);
 
         } catch (\Exception $e) {
             DB::commit();
@@ -52,6 +52,7 @@ class ServiceController extends Controller
 
         }
         DB::rollBack();
+        return $this->successResponse($service);
     }
 
 }

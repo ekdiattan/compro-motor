@@ -10,6 +10,11 @@
                     <p class="mb-4">{{$home->Slogan}}</p>
                 </div>
             </div>
+            <div class="col-lg-7">
+                <div class="hero-img-wrap">
+                    <img src="https://imgresizerappprod.azurewebsites.net/api/resizer/360/png/https://motorkux.azureedge.net/sys-master-media/h4a/h8a/8830170005534/Scoopy_Prestige_LP2_GN.png" class="img-fluid">
+                </div>
+            </div>
         </div>
     </div>
 </div>

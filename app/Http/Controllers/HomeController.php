@@ -26,16 +26,15 @@ class HomeController extends Controller
 
             $home = Home::findOrFail($id);
 
-            $image = $request->file('Image'); 
+            // $image = $request->file('Image'); 
 
-            if ($image) {
-                $imageName = time() . '.' . $image->getClientOriginalExtension();
+            // if ($image) {
+            //     $imageName = time() . '.' . $image->getClientOriginalExtension();
 
-                $image->move(public_path('images'), $imageName);
+            //     $image->move(public_path('images'), $imageName);
                 
-                $home->Image = $imageName; // Changed 'image' to 'Image'
-            }   dd($home);
-
+            //     $home->Image = $imageName; // Changed 'image' to 'Image'
+            // }   
             $home->update($request->all());
 
             DB::commit();

@@ -69,4 +69,11 @@ class ManagementController extends Controller
             'title' => 'Client',
         ]);
     }
+
+    public function galeri()
+    {
+        return view('company.galeri', [
+            'title' => 'Galeri',
+        ]);
+    }
 }
